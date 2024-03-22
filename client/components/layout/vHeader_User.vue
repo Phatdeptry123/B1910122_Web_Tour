@@ -27,7 +27,7 @@
                 >Home
               </nuxt-link>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <nuxt-link
                 @click="navigateTo('/tours/listTours')"
                 href=""
@@ -44,8 +44,8 @@
                 aria-current="page"
                 >Danh Sách Khu Vực</nuxt-link
               >
-            </li>
-            <li class="nav-item">
+            </li> -->
+            <!-- <li class="nav-item">
               <nuxt-link
                 @click="navigateTo('/users/listUser')"
                 href=""
@@ -53,7 +53,7 @@
                 aria-current="page"
                 >Danh Sách Người Dùng</nuxt-link
               >
-            </li>
+            </li> -->
             <li
               v-for="i in areas"
               :key="i._id"

@@ -22,8 +22,8 @@ const addArea = async (event) => {
     event.preventDefault();
     const { data: areas } = await useFetch(`${runtimeConfig.public.apiBase}/areas/create`, { method: 'post', body: formData.value })
     alert("Thêm Thành Công")
+    navigateTo('/areas/listAreas')
 }
-
 </script>
 
 <style></style>

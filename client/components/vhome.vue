@@ -6,7 +6,7 @@
                 <div class="card-body">
                     <h5 class="card-title">{{ i.tour_name }}</h5>
                     <p class="card-text">{{ i.tour_description }}</p>
-                    <a href="" class="btn btn-primary">Tìm Hiểu Tour</a>
+                    <a class="btn btn-primary">Tìm Hiểu Tour</a>
                 </div>
             </div>
         </div>

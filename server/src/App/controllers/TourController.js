@@ -12,6 +12,17 @@ class TourController {
       return res.status(500).send(error);
     }
   }
+  async findOnArea(req, res, next) {
+    try {
+      const records = await Tour.find({ area: req.params.area });
+      return res.send(records);
+    } catch (error) {
+      return res.status(500
+      ).send
+
+      (error);
+    }
+  }
   async findAll(req, res, next) {
     try {
       const records = await Tour.find();
@@ -47,5 +58,6 @@ class TourController {
       return res.status(500).send(error);
     }
   }
+
 }
 module.exports = new TourController();

@@ -4,6 +4,7 @@ const TourController = require("../App/controllers/TourController.js");
 
 router.post("/create", TourController.createTour);
 router.get("/find-all", TourController.findAll);
+router.get("/find/:area", TourController.findOnArea);
 router.get("/:tour_slug", TourController.showTour);
 router.put("/:id", TourController.updateTour);
 router.delete("/:id", TourController.deleteTour);
